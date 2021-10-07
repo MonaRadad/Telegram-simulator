@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="1092.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control1">
+   <children>
+      <Pane layoutX="316.0" prefHeight="753.0" prefWidth="776.0">
+         <children>
+            <Pane layoutX="-2.0" layoutY="7.0" prefHeight="46.0" prefWidth="776.0">
+               <children>
+                  <Text fx:id="online"  layoutX="21.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="online" wrappingWidth="45.6708984375">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane layoutX="-1.0" layoutY="696.0" prefHeight="58.0" prefWidth="776.0">
+               <children>
+                  <TextField fx:id="Message" layoutX="57.0" layoutY="3.0" prefHeight="52.0" prefWidth="650.0" promptText="type a message">
+                     <effect>
+                        <ColorAdjust hue="0.1" saturation="-0.17" />
+                     </effect>
+                  </TextField>
+                  <Button fx:id="filebtn" layoutX="5.0" layoutY="3.0" mnemonicParsing="false" onAction="#sendFilebtn" prefHeight="52.0" prefWidth="52.0" styleClass="sendFile" stylesheets="@Client.css" />
+                  <Button fx:id="messagebtn" layoutX="712.0" layoutY="3.0" mnemonicParsing="false" onAction="#sendMessagebtn" prefHeight="52.0" prefWidth="61.0" styleClass="sendMessage" stylesheets="@Client.css" />
+               </children>
+            </Pane>
+            <ListView fx:id="messageView" layoutX="3.0" layoutY="64.0" prefHeight="633.0" prefWidth="769.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="4.0" prefHeight="64.0" prefWidth="306.0">
+         <children>
+            <TextField fx:id="sreachUser" layoutX="3.0" layoutY="8.0" prefHeight="52.0" prefWidth="246.0" promptText="SreachUser" />
+            <Button fx:id="userbtn" layoutX="252.0" layoutY="8.0" mnemonicParsing="false" onAction="#searchUserbtn" prefHeight="52.0" prefWidth="52.0" styleClass="searchUser" stylesheets="@Client.css" />
+         </children>
+      </Pane>
+      <Button fx:id="crateGroupe" layoutY="697.0" mnemonicParsing="false" onAction="#CreateGroupbtn" prefHeight="55.0" prefWidth="156.0" text="Create group" />
+      <Button fx:id="logout" layoutX="158.0" layoutY="697.0" mnemonicParsing="false" onAction="#logoutbtn" prefHeight="55.0" prefWidth="150.0" text="Log out" />
+      <ListView fx:id="ListViewContact" layoutX="4.0" layoutY="66.0" onMouseClicked="#contactClick" prefHeight="627.0" prefWidth="306.0" />
+   </children>
+</AnchorPane>

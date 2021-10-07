@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control3">
+   <children>
+      <ImageView fx:id="fingetImage" fitHeight="700.0" fitWidth="800.0">
+         <image>
+            <Image url="@green-and-blue-wallpaper-for-walls-pink-purple-solid-color-backgrounds-border-b.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameLogout" layoutX="307.0" layoutY="307.0" prefHeight="31.0" prefWidth="219.0" promptText="Username" />
+      <TextField fx:id="passwordLogout" layoutX="307.0" layoutY="344.0" prefHeight="31.0" prefWidth="219.0" promptText="Password" />
+      <Button fx:id="loginButoonLogout" layoutX="365.0" layoutY="430.0" mnemonicParsing="false" onAction="#loginbtnLogout" prefHeight="41.0" prefWidth="96.0" text="Login" textAlignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <effect>
+            <ColorAdjust hue="0.78" />
+         </effect>
+      </Button>
+      <Text fx:id="usernameOut" layoutX="186.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="85.6708984375" />
+      <Text fx:id="passwordOut" layoutX="186.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="77.6708984375" />
+   </children>
+</AnchorPane>
